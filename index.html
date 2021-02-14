@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <!-- this is just to make another commit so Github realizes that it needs to update the page -->
   <head>
     <title>jauni radio šovi?</title>
     <meta charset="utf-8">
+    <style>
+      @font-face {
+	  font-family: "7seg";
+	  src: url("7segfont.ttf");
+      }
+      #clock {
+	  font-family: "7seg";
+	  font-size: 72px;
+	  background-color: black;
+	  color: red;
+	  padding: 10px;
+      }
+      .hidden {
+	  display: none;
+      }
+    </style>
+    <script>
+      const zeroPad = (num, places) => String(num).padStart(places, '0');
+
+      function updateClock() {
+	      let d = new Date();
+	      let hrs = zeroPad(d.getHours(), 2);
+	      let minutes = zeroPad(d.getHours(), 2);
+	      let seconds = zeroPad(d.getSeconds(), 2);
+	      document.getElementById("clock").innerHTML = `${hrs}:${minutes}:${seconds}`;
+      }
+      function toggleClock() {
+	      document.getElementById("clock-div").classList.toggle("hidden");
+      }
+      setInterval(updateClock, 1000)
+    </script>
   </head>
   <body>
     <h1>Kaķa blogs</h1>
-    <p>Labdien! Es esmu kaķis. Man garšo peles. Ņau~</p>
+    <p>Labdien! Es esmu kaķis. Man garšo peles. <span onclick="toggleClock();">Ņau~</span></p>
+    <div id="clock-div" class="hidden">
+      <p>Pašreizējais laiks:</p>
+      <span id="clock">88:88:88</span>
+    </div>
   </body>
 </html>
