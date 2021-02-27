@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@font-face {
+    font-family: "7seg";
+    src: url("../7segfont.ttf");
+}
+body {
+    margin-top: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url("../media/snowflake.svg");
+    background-size: 50px 50px;
+    background-repeat: repeat;
+    background-color: black;
+    color: white;
+}
+a {
+    color: green;
+}
+
+a:visited {
+    color: red;
+}
+#clock {
+    font-family: "7seg";
+    font-size: 16px;
+    background-color: black;
+    color: red;
+    padding: 5px;
+}
+#clock-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.hidden {
+    display: none;
+}
+.fullwidth {
+    width: 70vw;
+}
+td {
+    border: 1px solid white;
+}
