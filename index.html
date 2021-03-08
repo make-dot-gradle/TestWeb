@@ -4,35 +4,25 @@
     <title>jauni radio šovi?</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-      const zeroPad = (num, places) => String(num).padStart(places, '0');
-
-      function updateClock() {
-	      let d = new Date();
-	      let hrs = zeroPad(d.getHours(), 2);
-	      let minutes = zeroPad(d.getHours(), 2);
-	      let seconds = zeroPad(d.getSeconds(), 2);
-	      document.getElementById("clock").innerHTML = `${hrs}:${minutes}:${seconds}`;
-      }
-     setInterval(updateClock, 1000)
-    </script>
   </head>
   <body>
-    <div id="clock-container"><div id="clock">88:88:88</div></div>
-    <h1>Ziemas izklaides dabā</h1>
-    <img class="fullwidth" src="media/skiing.png" alt="Slēpošana">
-    <h3>Satura rādītājs</h3>
-    <ul id="table-of-contents">
-      <li><a href="#skiing">Slēpošana</a></li>
-      <li><a href="#riding-stuff">Braukšana ar kamanām</a></li>
-      <li><a href="#skating">Slidošana</a></li>
-    </ul>
-    <h2 id="skiing">Slēpošana</h2>
-    <p>Slēpošana ir sportiska aktivitāte un sporta veids, kurā slēpotājs ar slēpju palīdzību pārvietojas pa sniegu. Slēpošana tiek izmantota arī militāros nolūkos, kā arī, lai pārvietotos vietās, kur ir bieza sniega sega. 1924. gadā tika nodibināta Starptautiskā Slēpošanas federācija, kas atbild par visiem slēpošanas sporta veidiem, izņemot biatlonu. Populārākie slēpošanas veidi ir distanču slēpošana, kalnu slēpošana, tramplīnlēkšana, ziemeļu divcīņa, frīstaila slēpošana, snovbords.</p>
-    <h2 id="riding-stuff">Braukšana ar kamanām</h2>
-    <p>Braukšana ar kamanām ir aktivitāte, kurā tiek izmantotas <a href="https://en.wikipedia.org/wiki/Sled" alt="Kamanas (angliski)" target="_blank">kamanas</a>. Šī aktivitāte Latvijā lielākoties ir izklaides nolūkos.</p>
-    <h2 id="skating">Slidošana</h2>
-    <p>Slidošana ir cilvēka pašvirzība pa ledus kārtu, izmantojot ledus slidas ar metāla asmeņiem, lai pārvietotos pa ledus virsmu. </p>
-    <a href="addresses.html">Dažas šādu vietu adreses</a>
+    <iframe id="header-embed" src="header.html"></iframe>
+    <div class="content">
+      <h1>Ziemas izklaides dabā</h1>
+      <img class="fullwidth" src="media/skiing.png" alt="Slēpošana">
+      <h3>Satura rādītājs</h3>
+      <ul id="table-of-contents">
+	<li><a href="#skiing">Slēpošana</a></li>
+	<li><a href="#riding-stuff">Braukšana ar kamanām</a></li>
+	<li><a href="#skating">Slidošana</a></li>
+      </ul>
+      <h2 id="skiing">Slēpošana</h2>
+      <p>Slēpošana ir sportiska aktivitāte un sporta veids, kurā slēpotājs ar slēpju palīdzību pārvietojas pa sniegu. Slēpošana tiek izmantota arī militāros nolūkos, kā arī, lai pārvietotos vietās, kur ir bieza sniega sega. 1924. gadā tika nodibināta Starptautiskā Slēpošanas federācija, kas atbild par visiem slēpošanas sporta veidiem, izņemot biatlonu. Populārākie slēpošanas veidi ir distanču slēpošana, kalnu slēpošana, tramplīnlēkšana, ziemeļu divcīņa, frīstaila slēpošana, snovbords.</p>
+      <h2 id="riding-stuff">Braukšana ar kamanām</h2>
+      <p>Braukšana ar kamanām ir aktivitāte, kurā tiek izmantotas <a href="https://en.wikipedia.org/wiki/Sled" alt="Kamanas (angliski)" target="_blank">kamanas</a>. Šī aktivitāte Latvijā lielākoties ir izklaides nolūkos.</p>
+      <h2 id="skating">Slidošana</h2>
+      <p>Slidošana ir cilvēka pašvirzība pa ledus kārtu, izmantojot ledus slidas ar metāla asmeņiem, lai pārvietotos pa ledus virsmu. </p>
+      <a href="addresses.html">Dažas šādu vietu adreses</a>
+    </div>
   </body>
 </html>
