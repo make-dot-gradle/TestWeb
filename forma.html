@@ -45,11 +45,9 @@
 		      input.value = "-∞";
 	      else
 		      input.value = res.toString();
-	      exec.dataset.operation = "add";
-	      exec.dataset.firstop = "0";
+	      reset(exec);
       }
-      function reset(exec, input) {
-	      input.value = "";
+      function reset(exec) {
 	      exec.dataset.operation = "add";
 	      exec.dataset.firstop = "0";
       }
@@ -99,7 +97,7 @@
 	  <tr>
 	  </tr>
 	  <tr>
-	    <td><input value="CE" onclick="reset(exec, input);" type="button"></td>
+	    <td><input value="CE" onclick="reset(exec, input);" type="reset"></td>
 	    <td colspan="2"><input value="=" name="exec" onclick="execute(exec, input)" type="button" data-operation="add" data-firstop="0"></td>
 	</table>
       </form>

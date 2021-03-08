@@ -6,6 +6,7 @@
 body {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
     background-image: url("../media/snowflake.svg");
     background-size: 50px 50px;
     background-repeat: repeat;
